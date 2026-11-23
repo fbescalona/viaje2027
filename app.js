@@ -2561,6 +2561,319 @@ const TRIPS_DATA = {
     }
   ]
 };
+const MAP_ROUTES = {
+  "filipinas": {
+    "center": [
+      13.2,
+      122.0
+    ],
+    "zoom": 6,
+    "color": "#059669",
+    "stops": [
+      {
+        "num": "D1-D2",
+        "name": "Manila (Intramuros)",
+        "coords": [
+          14.5995,
+          120.9842
+        ],
+        "desc": "Capital histórica, murallas coloniales y Binondo",
+        "dayIdx": 0
+      },
+      {
+        "num": "D3",
+        "name": "Banaue & Batad",
+        "coords": [
+          16.92,
+          121.05
+        ],
+        "desc": "Anfiteatro de terrazas de arroz (UNESCO)",
+        "dayIdx": 2
+      },
+      {
+        "num": "D4-D5",
+        "name": "Sagada",
+        "coords": [
+          17.0833,
+          120.9
+        ],
+        "desc": "Ataúdes colgantes, Marlboro Hills y cueva Sumaguing",
+        "dayIdx": 4
+      },
+      {
+        "num": "D6-D7",
+        "name": "Vigan (UNESCO)",
+        "coords": [
+          17.5747,
+          120.3869
+        ],
+        "desc": "Ciudad colonial española del siglo XVI y calesas",
+        "dayIdx": 5
+      },
+      {
+        "num": "D8",
+        "name": "Cebú City",
+        "coords": [
+          10.3157,
+          123.8854
+        ],
+        "desc": "Cruz de Magallanes y Basílica del Santo Niño",
+        "dayIdx": 7
+      },
+      {
+        "num": "D9-D10",
+        "name": "Bohol & Balicasag",
+        "coords": [
+          9.8333,
+          124.1667
+        ],
+        "desc": "Chocolate Hills, tarsiers y tortugas en Balicasag / Apo Island",
+        "dayIdx": 8
+      },
+      {
+        "num": "D11",
+        "name": "Moalboal & Kawasan",
+        "coords": [
+          9.9567,
+          123.4
+        ],
+        "desc": "Sardine Run masivo y barranquismo en Kawasan Falls",
+        "dayIdx": 10
+      },
+      {
+        "num": "D12-D14",
+        "name": "Coron (Palawan)",
+        "coords": [
+          11.9986,
+          120.2075
+        ],
+        "desc": "Lagos Kayangan y Barracuda, pecios de la II Guerra Mundial",
+        "dayIdx": 11
+      },
+      {
+        "num": "D15-D18",
+        "name": "El Nido (Palawan)",
+        "coords": [
+          11.1949,
+          119.4075
+        ],
+        "desc": "Archipiélago de Bacuit, Big Lagoon, Taraw Cliff y Nacpan",
+        "dayIdx": 14
+      },
+      {
+        "num": "D19-D20",
+        "name": "Puerto Princesa",
+        "coords": [
+          9.7392,
+          118.7353
+        ],
+        "desc": "Parque Nacional del Río Subterráneo (Maravilla Mundial)",
+        "dayIdx": 18
+      },
+      {
+        "num": "D21",
+        "name": "Manila (Salida)",
+        "coords": [
+          14.5995,
+          120.9842
+        ],
+        "desc": "Tesoros de oro prehispánico en Museo Ayala y regreso",
+        "dayIdx": 20
+      }
+    ]
+  },
+  "colombia": {
+    "center": [
+      6.5,
+      -74.5
+    ],
+    "zoom": 6,
+    "color": "#d97706",
+    "stops": [
+      {
+        "num": "D1-D2",
+        "name": "Bogotá & Zipaquirá",
+        "coords": [
+          4.711,
+          -74.0721
+        ],
+        "desc": "Monserrate, Museo del Oro y Catedral de Sal subterránea",
+        "dayIdx": 0
+      },
+      {
+        "num": "D3-D4",
+        "name": "Desierto de la Tatacoa",
+        "coords": [
+          3.2333,
+          -75.1667
+        ],
+        "desc": "Cárcavas rojas de El Cuzco, cañón gris y observatorio astronómico",
+        "dayIdx": 2
+      },
+      {
+        "num": "D5-D7",
+        "name": "Eje Cafetero (Salento)",
+        "coords": [
+          4.6375,
+          -75.5708
+        ],
+        "desc": "Palmas de cera de 60m en Cocora, fincas cafeteras y Filandia",
+        "dayIdx": 4
+      },
+      {
+        "num": "D8-D9",
+        "name": "Medellín & Guatapé",
+        "coords": [
+          6.2442,
+          -75.5812
+        ],
+        "desc": "Comuna 13, Botero, metrocable y Piedra del Peñol (740 peldaños)",
+        "dayIdx": 7
+      },
+      {
+        "num": "D10-D11",
+        "name": "Minca (Sierra Nevada)",
+        "coords": [
+          11.1444,
+          -74.1167
+        ],
+        "desc": "Selva andina, aves endémicas, cacao y cascadas de Marinka",
+        "dayIdx": 9
+      },
+      {
+        "num": "D12-D13",
+        "name": "Parque Nacional Tayrona",
+        "coords": [
+          11.3167,
+          -73.9167
+        ],
+        "desc": "Cabo San Juan del Guía, La Piscina y arrecifes de granito",
+        "dayIdx": 11
+      },
+      {
+        "num": "D14-D17",
+        "name": "Cartagena & Palenque",
+        "coords": [
+          10.391,
+          -75.4794
+        ],
+        "desc": "Murallas coloniales, Castillo San Felipe y San Basilio de Palenque",
+        "dayIdx": 13
+      },
+      {
+        "num": "D18-D19",
+        "name": "Islas del Rosario",
+        "coords": [
+          10.1833,
+          -75.75
+        ],
+        "desc": "Arrecifes coralinos en Isla Grande y plancton bioluminiscente",
+        "dayIdx": 17
+      },
+      {
+        "num": "D20-D21",
+        "name": "Cartagena - Bogotá (Salida)",
+        "coords": [
+          4.711,
+          -74.0721
+        ],
+        "desc": "Compras de artesanías de autor y vuelo transatlántico a España",
+        "dayIdx": 19
+      }
+    ]
+  },
+  "china": {
+    "center": [
+      30.5,
+      111.0
+    ],
+    "zoom": 5,
+    "color": "#dc2626",
+    "stops": [
+      {
+        "num": "D1-D4",
+        "name": "Pekín (Beijing)",
+        "coords": [
+          39.9042,
+          116.4074
+        ],
+        "desc": "Ciudad Prohibida, Gran Muralla Jinshanling y Templo del Cielo",
+        "dayIdx": 0
+      },
+      {
+        "num": "D5-D6",
+        "name": "Xi'an",
+        "coords": [
+          34.3416,
+          108.9398
+        ],
+        "desc": "Guerreros de Terracota (UNESCO) y muralla medieval en bici",
+        "dayIdx": 4
+      },
+      {
+        "num": "D7-D8",
+        "name": "Chengdu & Leshan",
+        "coords": [
+          30.5728,
+          104.0668
+        ],
+        "desc": "Base de Pandas, Gran Buda de 71m (o Sanxingdui) y hotpot",
+        "dayIdx": 6
+      },
+      {
+        "num": "D9-D11",
+        "name": "Yunnan & Salto del Tigre",
+        "coords": [
+          26.855,
+          100.2277
+        ],
+        "desc": "Lijiang UNESCO y gran trekking de la Garganta del Salto del Tigre",
+        "dayIdx": 8
+      },
+      {
+        "num": "D12-D15",
+        "name": "Zhangjiajie (Avatar)",
+        "coords": [
+          29.117,
+          110.479
+        ],
+        "desc": "Pilares flotantes, puente de cristal con tirolina/tobogán y Tianmen",
+        "dayIdx": 11
+      },
+      {
+        "num": "D16-D17",
+        "name": "Guilin & Yangshuo",
+        "coords": [
+          24.7766,
+          110.4947
+        ],
+        "desc": "Crucero por el Río Li en billete de 20¥, río Yulong y Moon Hill",
+        "dayIdx": 15
+      },
+      {
+        "num": "D18-D19",
+        "name": "Shenzhen (Tech Capital)",
+        "coords": [
+          22.5431,
+          114.0579
+        ],
+        "desc": "Huaqiangbei, Flagship de DJI, Ping An 599m, drones y robotaxis",
+        "dayIdx": 17
+      },
+      {
+        "num": "D20-D21",
+        "name": "Shanghái & Suzhou",
+        "coords": [
+          31.2304,
+          121.4737
+        ],
+        "desc": "Jardines de Suzhou (UNESCO), Torre de Shanghái 632m y Maglev",
+        "dayIdx": 19
+      }
+    ]
+  }
+};
+
 const tripMaps = {};
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -2585,7 +2898,7 @@ function renderApp() {
     panel.className = `trip-panel ${tIdx === 0 ? 'active' : ''}`;
     panel.id = `panel-${trip.id}`;
 
-    const routeInfo = MAP_ROUTES[trip.id];
+    const routeInfo = (typeof MAP_ROUTES !== 'undefined' && MAP_ROUTES) ? MAP_ROUTES[trip.id] : null;
     let routeRibbonHtml = '';
     if (routeInfo) {
       routeRibbonHtml = routeInfo.stops.map((s, sIdx) => `
@@ -2806,7 +3119,7 @@ function initTripMap(tripId) {
     return;
   }
 
-  const routeData = MAP_ROUTES[tripId];
+  const routeData = (typeof MAP_ROUTES !== 'undefined' && MAP_ROUTES) ? MAP_ROUTES[tripId] : null;
   if (!routeData) return;
 
   const map = L.map(`map-${tripId}`, {
@@ -2858,7 +3171,7 @@ function initTripMap(tripId) {
 }
 
 function focusMapStop(tripId, stopIdx, dayIdx) {
-  const routeData = MAP_ROUTES[tripId];
+  const routeData = (typeof MAP_ROUTES !== 'undefined' && MAP_ROUTES) ? MAP_ROUTES[tripId] : null;
   const map = tripMaps[tripId];
   if (routeData && map && routeData.stops[stopIdx]) {
     const stop = routeData.stops[stopIdx];
