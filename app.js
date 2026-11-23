@@ -36,7 +36,7 @@ const TRIPS_DATA = {
         {
           "title": "Big Lagoon & Bacuit",
           "location": "El Nido, Palawan",
-          "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Big_Lagoon%2C_El_Nido%2C_Philippines_%2836929017682%29.jpg/1280px-Big_Lagoon%2C_El_Nido%2C_Philippines_%2836929017682%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Big_Lagoon%2C_El_Nido%2C_Philippines_%2836705678660%29.jpg/1280px-Big_Lagoon%2C_El_Nido%2C_Philippines_%2836705678660%29.jpg",
           "desc": "Paredes verticales de caliza negra que encierran una laguna turquesa en silencio."
         },
         {
@@ -54,7 +54,7 @@ const TRIPS_DATA = {
         {
           "title": "Ciudad Colonial de Vigan",
           "location": "Ilocos Sur, Luzón",
-          "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vigan_Heritage_Village_wedding_carriage.JPG/1280px-Vigan_Heritage_Village_wedding_carriage.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Calle_Crisologo%2C_Vigan_City_-_Vigan2202.jpg/1280px-Calle_Crisologo%2C_Vigan_City_-_Vigan2202.jpg",
           "desc": "La joya hispano-filipina del siglo XVI con casonas de madera y calles empedradas."
         }
       ],
@@ -1738,7 +1738,7 @@ const TRIPS_DATA = {
         {
           "title": "Montañas de Avatar (Zhangjiajie)",
           "location": "Wulingyuan, Hunan",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bailong_Elevator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Bailong_Elevator_01.jpg/1280px-Bailong_Elevator_01.jpg",
           "desc": "Más de 3.000 pilares verticales de arenisca cuarzosa flotando sobre la niebla."
         },
         {
