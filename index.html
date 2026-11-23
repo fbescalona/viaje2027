@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Propuestas de Gran Viaje: Filipinas, Colombia y China | 3 Semanas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Leaflet.js Interactive Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-container">
+        <div class="brand-icon">🧭</div>
+        <div class="brand-titles">
+          <h1>Grandes Expediciones: 3 Semanas</h1>
+          <p>Itinerarios a Medida para Viajeros Activos (Cultura + Naturaleza)</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="btn-open-compare" class="btn-compare-header">
+          <span>⚖️</span> Comparar los 3 Viajes
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Destination Tabs Navigation -->
+  <nav class="tabs-navigation-wrapper">
+    <div class="tabs-navigation">
+      <button class="tab-btn active" data-tab="filipinas">
+        <span class="flag">🇵🇭</span>
+        <span>Filipinas: Arrozales & Paraísos Kársticos</span>
+      </button>
+      <button class="tab-btn" data-tab="colombia">
+        <span class="flag">🇨🇴</span>
+        <span>Colombia: De los Andes al Caribe Salvaje</span>
+      </button>
+      <button class="tab-btn" data-tab="china">
+        <span class="flag">🇨🇳</span>
+        <span>China: Imperio Milenario & Montañas Avatar</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="main-content">
+    <div id="trips-container">
+      <!-- Dynamically Rendered via app.js -->
+    </div>
+  </main>
+
+  <!-- Comparison Modal -->
+  <div id="compare-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="btn-close-compare" class="modal-close">✕</button>
+      <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">
+        ⚖️ Comparativa Directa de los 3 Destinos
+      </h3>
+      <p style="color: #64748b; font-size: 0.95rem;">
+        Análisis comparativo de 8 dimensiones clave para ayudaros a elegir vuestra próxima aventura de 3 semanas.
+      </p>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Criterio de Elección</th>
+            <th>🇵🇭 Filipinas</th>
+            <th>🇨🇴 Colombia</th>
+            <th>🇨🇳 China</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Duración & Días</strong></td>
+            <td>21 Días / 20 Noches</td>
+            <td>21 Días / 20 Noches</td>
+            <td>21 Días / 20 Noches</td>
+          </tr>
+          <tr>
+            <td><strong>Ritmo e Intensidad</strong></td>
+            <td>Muy Alto (espeleología, barranquismo, snorkel)</td>
+            <td>Medio-Alto (trekking andino a 2.850m, selva)</td>
+            <td>Alto (trekking cañón alpino, muralla, escaleras)</td>
+          </tr>
+          <tr>
+            <td><strong>Naturaleza Protagonista</strong></td>
+            <td>Arrozales Batad, lagos kársticos Coron/El Nido</td>
+            <td>Valle Cocora, Tatacoa, Tayrona, Sierra Nevada</td>
+            <td>Salto del Tigre, pilares Avatar Zhangjiajie, río Li</td>
+          </tr>
+          <tr>
+            <td><strong>Patrimonio Cultural</strong></td>
+            <td>Intramuros colonial, ritos Sagada, Vigan UNESCO</td>
+            <td>Museo Oro Bogotá, Comuna 13, Cartagena, Palenque</td>
+            <td>Ciudad Prohibida, Gran Muralla, Guerreros Xi'an</td>
+          </tr>
+          <tr>
+            <td><strong>Transporte Característico</strong></td>
+            <td>Bus nocturno ejecutivo, fast ferrys, bancas privadas</td>
+            <td>Jeeps Willys clásicos, van privada, lanchas rápidas</td>
+            <td>Trenes bala Fuxing a 350 km/h, Maglev a 431 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Gastronomía Ineludible</strong></td>
+            <td>Lechón de Cebú, Kinilaw, street food Binondo</td>
+            <td>Ajiaco, Bandeja Paisa, café finca, frutas exóticas</td>
+            <td>Pato Pekinés, Sichuan Hotpot, fideos Biang Biang</td>
+          </tr>
+          <tr>
+            <td><strong>Presupuesto Aprox. (p.p.)</strong></td>
+            <td>~2.760€ - 3.210€ (todo incluido)</td>
+            <td>~2.780€ - 3.280€ (todo incluido)</td>
+            <td>~3.110€ - 3.680€ (confort familiar activo, 2 hab.)<br><small style='color:#64748b; font-size:0.8rem;'>Ref. suelo mochilero extremo: ~1.934€</small></td>
+          </tr>
+          <tr>
+            <td><strong>Descarga Documento</strong></td>
+            <td><a href="Itinerario_Filipinas_3_Semanas.docx" download style="color:#107c41; font-weight:700;">Descargar Word (.docx)</a></td>
+            <td><a href="Itinerario_Colombia_3_Semanas.docx" download style="color:#b76e00; font-weight:700;">Descargar Word (.docx)</a></td>
+            <td><a href="Itinerario_China_3_Semanas.docx" download style="color:#a93226; font-weight:700;">Descargar Word (.docx)</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
